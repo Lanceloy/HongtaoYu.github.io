@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongtao Yu | Digital Marketer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+        :root {
+            /* Morandi Palette Definition */
+            --bg-color: #F7F5F2; /* 暖调米灰 */
+            --text-main: #4A4A4A; /* 深灰 */
+            --text-muted: #848484; /* 浅灰 */
+            --accent-blue: #8E9EAB; /* 莫兰迪蓝 */
+            --accent-green: #9FB1A5; /* 莫兰迪绿 */
+            --accent-clay: #D4C4B7; /* 陶土色 */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* 衬线体用于标题，增加优雅感 */
+        }
+
+        .morandi-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        .morandi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-color: var(--accent-blue);
+        }
+
+        .skill-tag {
+            background-color: #E8E6E1;
+            color: var(--text-main);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+        
+        .skill-tag:hover {
+            background-color: var(--accent-clay);
+            color: white;
+        }
+
+        /* Image styling */
+        .profile-img {
+            object-fit: cover;
+            border-radius: 12px; 
+            box-shadow: 20px 20px 0px var(--accent-blue); /* 艺术边框效果 */
+        }
+
+        .gallery-img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.4s ease;
+            filter: grayscale(20%); /* 默认稍微去色，更显高级 */
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.02);
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gray-300 selection:text-gray-800">
+
+    <nav class="fixed w-full z-50 bg-opacity-90 bg-[#F7F5F2] py-4 px-6 flex justify-between items-center border-b border-gray-200">
+        <div class="text-xl font-serif font-semibold tracking-wide">HY.</div>
+        <div class="space-x-6 text-sm font-light hidden md:block">
+            <a href="#about" class="hover:text-[#8E9EAB] transition">About</a>
+            <a href="#experience" class="hover:text-[#8E9EAB] transition">Experience</a>
+            <a href="#projects" class="hover:text-[#8E9EAB] transition">Projects</a>
+            <a href="https://www.linkedin.com/in/hongtao-yu" target="_blank" class="px-4 py-2 border border-gray-400 rounded-full hover:bg-gray-800 hover:text-white transition">Let's Connect</a>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6 order-2 md:order-1">
+                <p class="text-[#8E9EAB] font-medium tracking-widest uppercase text-sm">Based in Berlin</p>
+                <h1 class="text-5xl md:text-7xl leading-tight text-gray-800">
+                    Marketing Strategy <br>
+                    <span class="italic text-[#9FB1A5]">& Storytelling.</span>
+                </h1>
+                <p class="text-lg text-gray-600 max-w-md">
+                    Hi, I'm <strong>Hongtao Yu</strong>. 
+                    I bridge the gap between data-driven insights and emotional brand narratives. 
+                    With a background in International Management and experience in Berlin, Parma, and Shanghai.
+                </p>
+                
+                <div class="flex flex-wrap gap-3 pt-4">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">Brand Strategy</span>
+                    <span class="skill-tag">Market Research</span>
+                    <span class="skill-tag">Gen AI</span>
+                    <span class="skill-tag">Figma & Shopify</span>
+                </div>
+
+                <div class="pt-6">
+                    <a href="mailto:hongtaoyu94@gmail.com" class="border-b-2 border-gray-800 pb-1 hover:text-[#8E9EAB] hover:border-[#8E9EAB] transition">hongtaoyu94@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                <div class="relative w-80 md:w-96">
+                    <img src="1000011280.jpg" alt="Hongtao Yu" class="profile-img w-full h-auto z-10 relative">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6 bg-white bg-opacity-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl mb-12 text-center">Professional Journey</h2>
+            
+            <div class="space-y-12 border-l-2 border-[#D4C4B7] ml-4 md:ml-0 pl-8 md:pl-0">
+                
+                <div class="relative md:grid md:grid-cols-5 md:gap-8 items-start">
+                    <div class="md:col-span-1 md:text-right md:pr-8 text-sm text-[#8E9EAB] font-medium mb-2 md:mb-0">
+                        05.2025 - 09.2025
+                    </div>
+                    <div class="hidden md:block absolute left-[19.5%] w-4 h-4 bg-[#F7F5F2] border-4 border-[#9FB1A5] rounded-full"></div>
+                    
+                    <div class="md:col-span-4 morandi-card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold">Sales & Operations Intern</h3>
+                        <p class="text-sm font-serif italic text-gray-500 mb-4">Oddys.co, Berlin</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
+                            <li>Defined brand operations by implementing internal workflow tools (Trello).</li>
+                            <li>Designed a functional mobile app demo in Figma within 2 weeks for investor pitching.</li>
+                            <li>Built a website with Shopify and optimized layout based on traffic analysis.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative md:grid md:grid-cols-5 md:gap-8 items-start">
+                    <div class="md:col-span-1 md:text-right md:pr-8 text-sm text-[#8E9EAB] font-medium mb-2 md:mb-0">
+                        04.2024 - 07.2024
+                    </div>
+                    <div class="hidden md:block absolute left-[19.5%] w-4 h-4 bg-[#F7F5F2] border-4 border-[#9FB1A5] rounded-full"></div>
+
+                    <div class="md:col-span-4 morandi-card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold">Marketing Intern</h3>
+                        <p class="text-sm font-serif italic text-gray-500 mb-4">Barilla Group, Parma</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
+                            <li>Leveraged AI analytics to segment target audiences for food innovations.</li>
+                            <li>Explored Generative AI for product design and brand storytelling.</li>
+                            <li>Conducted customer segmentation mapping for new product launches.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="relative md:grid md:grid-cols-5 md:gap-8 items-start">
+                    <div class="md:col-span-1 md:text-right md:pr-8 text-sm text-[#8E9EAB] font-medium mb-2 md:mb-0">
+                        Previous
+                    </div>
+                    <div class="hidden md:block absolute left-[19.5%] w-4 h-4 bg-[#F7F5F2] border-4 border-[#D4C4B7] rounded-full"></div>
+
+                    <div class="md:col-span-4 morandi-card p-6 rounded-lg opacity-80 hover:opacity-100">
+                        <h3 class="text-lg font-semibold">HR & Headhunting Roles</h3>
+                        <p class="text-sm font-serif italic text-gray-500 mb-2">Fonterra (Shanghai) & Zeshi Enterprise</p>
+                        <p class="text-sm text-gray-600">
+                            Gained strong foundation in cross-team collaboration, talent management, and market research in the FMCG sector.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl mb-12 text-center">Selected Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="morandi-card p-8 rounded-xl group cursor-pointer">
+                    <div class="text-[#8E9EAB] text-sm font-bold mb-2">CAMPAIGN DESIGN</div>
+                    <h3 class="text-2xl font-serif mb-4 group-hover:text-[#8E9EAB] transition">Sotheby's International Realty</h3>
+                    <p class="text-gray-600 mb-4">Developed a strategic storytelling concept positioning Sotheby's as a curator of lifestyles. Integrated Berlin's local culture and proposed AR/VR experiences.</p>
+                </div>
+
+                <div class="morandi-card p-8 rounded-xl group cursor-pointer">
+                    <div class="text-[#8E9EAB] text-sm font-bold mb-2">AGILE MANAGEMENT</div>
+                    <h3 class="text-2xl font-serif mb-4 group-hover:text-[#8E9EAB] transition">dm-drogerie markt Case Study</h3>
+                    <p class="text-gray-600 mb-4">Applied SCRUM principles to design a reusable food packaging system. Delivered market strategy improving efficiency and sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-white bg-opacity-40">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl mb-4">Visual Journal</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">My inspiration comes from the world around me. Exploring architecture, nature, and cultures from Shanghai to Berlin.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <img src="1000006665.jpg" alt="Berlin" class="gallery-img">
+                <img src="1000008687.jpg" alt="Architecture" class="gallery-img">
+                <img src="1000001434.jpg" alt="Nature" class="gallery-img">
+                <img src="1000007647.jpg" alt="City Street" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center bg-[#EBE7E0]">
+        <h2 class="text-2xl font-serif mb-6">Let's create something together.</h2>
+        <div class="flex justify-center gap-6 mb-8">
+            <a href="https://www.linkedin.com/in/hongtao-yu" class="text-gray-600 hover:text-[#8E9EAB] transition">LinkedIn</a>
+            <a href="mailto:hongtaoyu94@gmail.com" class="text-gray-600 hover:text-[#8E9EAB] transition">Email</a>
+            <span class="text-gray-400">|</span>
+            <span class="text-gray-500">Berlin, Germany</span>
+        </div>
+        <p class="text-xs text-gray-400">© 2026 Hongtao Yu. Vibe Coded.</p>
+    </footer>
+
+</body>
+</html>
