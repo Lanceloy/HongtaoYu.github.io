@@ -5,12 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Hongtao Yu | Digital Marketing Strategy & Brand Storytelling</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%238E9EAB'/><text x='32' y='42' font-family='serif' font-size='28' fill='white' text-anchor='middle' font-weight='bold'>HY</text></svg>">
     <meta name="description" content="Portfolio of Hongtao Yu, a Berlin-based Digital Marketer specializing in Brand Storytelling, Market Strategy, and Data Analytics.">
-    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Lanceloy/HongtaoYu.github.io">
+    <meta property="og:title" content="Hongtao Yu | Digital Marketing Strategy & Portfolio">
+    <meta property="og:description" content="Berlin-based Marketer specializing in Brand Storytelling and Data Analytics. Explore my case studies and thoughts.">
+    <meta property="og:image" content="https://github.com/Lanceloy/HongtaoYu.github.io/og-preview-image.jpg"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hongtao Yu | Portfolio">
+    <meta name="twitter:description" content="Bridging rational data analysis and emotional brand narratives.">
+    <meta name="twitter:image" content="https://github.com/Lanceloy/HongtaoYu.github.io/og-preview-image.jpg">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <!-- Three.js for the Warp Animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+         "@context": "https://schema.org",
+         "@type": "Person",
+         "name": "Hongtao Yu",
+         "jobTitle": "Digital Marketing Strategist",
+         "url": "https://lanceloy.github.io/HongtaoYu.github.io/",
+         "sameAs": [
+         "https://www.linkedin.com/in/hongtao-yu",
+         "https://www.instagram.com/lance_yus/",
+         "https://www.facebook.com/profile.php?id=61552596008137"
+        ],
+            "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Berlin",
+            "addressCountry": "Germany"
+             },
+         "alumniOf": [
+         {
+         "@type": "CollegeOrUniversity",
+         "name": "ICN Business School"
+         },
+        {
+         "@type": "CollegeOrUniversity",
+         "name": "University of Bologna"
+          }
+        ],
+        "knowsAbout": ["Digital Marketing", "Brand Storytelling", "Market Strategy", "Data Analytics", "SCRUM"]
+        }
+</script>
 
     <style>
         /* Google Fonts */
@@ -343,7 +383,7 @@
                 <div class="order-1 md:order-2 flex justify-center md:justify-end">
                     <div class="relative w-72 md:w-96">
                         <!-- Placeholder Image Logic: Using a div with background if image fails -->
-                        <img src="1000011280.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Hongtao Yu Portrait" class="profile-img w-full h-auto z-10 relative">
+                        <img src="1000011280.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Professional portrait of Hongtao Yu, Digital Marketing Strategist and Data Storyteller based in Berlin" class="profile-img w-full h-auto z-10 relative">
                     </div>
                 </div>
             </div>
@@ -677,33 +717,33 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     
-                    <a href="#" onclick="openBlog('berlin'); return false;" class="block relative group overflow-hidden rounded-lg">
-                        <img src="1000008323.jpg" onerror="this.src='https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Berlin Architecture" class="gallery-img">
+                    <button onclick="openBlog('berlin'); return false;" class="block relative group overflow-hidden rounded-lg">
+                        <img src="1000008323.jpg" onerror="this.src='https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Brutalist concrete architecture in Berlin Alexanderplatz, symbolizing structural brand storytelling" class="gallery-img">
                         <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                             <span class="text-white font-medium border border-white px-4 py-1 rounded-full text-sm">Read Story</span>
                         </div>
-                    </a>
+                    </button>
 
-                   <a href="#" onclick="openBlog('streets'); return false;" class="block relative group overflow-hidden rounded-lg">
-                        <img src="1000008687.jpg" onerror="this.src='https://images.unsplash.com/photo-1471341971474-27361b1f1858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="European Streets" class="gallery-img">
+                   <button onclick="openBlog('streets'); return false;" class="block relative group overflow-hidden rounded-lg">
+                        <img src="1000008687.jpg" onerror="this.src='https://images.unsplash.com/photo-1471341971474-27361b1f1858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Cobblestone European street perspective, illustrating non-linear customer journey and user experience" class="gallery-img">
                         <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                             <span class="text-white font-medium border border-white px-4 py-1 rounded-full text-sm">Read Story</span>
                         </div>
-                    </a>
+                    </button>
 
-                    <a href="#" onclick="openBlog('nature'); return false;" class="block relative group overflow-hidden rounded-lg">
-                        <img src="1000001434.jpg" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Nature Walk" class="gallery-img">
+                    <button onclick="openBlog('nature'); return false;" class="block relative group overflow-hidden rounded-lg">
+                        <img src="1000001434.jpg" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Scenic Dolomites mountain landscape, representing strategic clarity and disconnection from digital noise" class="gallery-img">
                          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                             <span class="text-white font-medium border border-white px-4 py-1 rounded-full text-sm">Read Story</span>
                         </div>
-                    </a>
+                    </button>
 
-                    <a href="#" onclick="openBlog('urban'); return false;" class="block relative group overflow-hidden rounded-lg">
-                        <img src="1000007647.jpg" onerror="this.src='https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Urban Life" class="gallery-img">
+                    <button onclick="openBlog('urban'); return false;" class="block relative group overflow-hidden rounded-lg">
+                        <img src="1000007647.jpg" onerror="this.src='https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'" alt="Busy urban street scene with motion blur, reflecting consumer behavior trends and market data flow" class="gallery-img">
                         <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                             <span class="text-white font-medium border border-white px-4 py-1 rounded-full text-sm">Read Story</span>
                         </div>
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -761,6 +801,7 @@
             'streets': {
                 title: "Wandering European Streets",
                 image: "1000008687.jpg",
+                altText: "Brutalist concrete architecture in Berlin Alexanderplatz",
                 fallback: "https://images.unsplash.com/photo-1471341971474-27361b1f1858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                 content: `
                     <p class="mb-6">There is a texture to European streets that you don't find elsewhere. The cobblestones under your feet, the narrow alleys that suddenly open up into grand piazzas.</p>
@@ -770,6 +811,7 @@
             'nature': {
                 title: "Finding Clarity in Nature",
                 image: "1000001434.jpg",
+                altText: "Scenic Dolomites mountain landscape, representing strategic clarity and disconnection from digital noise",
                 fallback: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                 content: `
                     <p class="mb-6">The digital world is loud. Notifications, emails, metrics. Sometimes, the only way to strategize effectively is to disconnect completely.</p>
@@ -779,6 +821,7 @@
             'urban': {
                 title: "The Pulse of Urban Life",
                 image: "1000007647.jpg",
+                altText: "Busy urban street scene with motion blur, reflecting consumer behavior trends and market data flow",
                 fallback: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                 content: `
                     <p class="mb-6">Cities are data points in motion. Every person rushing to the subway is a story, a potential customer, a human being with needs and desires.</p>
@@ -816,6 +859,8 @@
             const imgEl = document.getElementById('blog-header-image');
             if(imgEl) {
                 imgEl.src = data.image;
+                imgEl.alt = data.altText || "Blog header image showing digital marketing insights";
+
                 imgEl.onerror = function() {
                     this.src = data.fallback;
                 };
